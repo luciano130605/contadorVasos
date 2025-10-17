@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador de vasos</title>
+
+</head>
+
+<body>
+    <main class="app">
+        <header>
+            <div>
+                <div class="sub">Registra vasos por día</div>
+            </div>
+            <div style="text-align:right">
+                <div id="todayLabel" class="sub"></div>
+            </div>
+        </header>
+
+        <section class="card">
+            <div class="date-row">
+                <button id="prevDay" class="btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <input id="datePicker" type="date">
+                <button id="nextDay" class="btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button id="goToday" class="btn">Ir a hoy</button>
+            </div>
+
+            <div class="count" id="count">0</div>
+
+            <div class="big">
+                <button id="decr" class="btn minus">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <button id="add" class="btn add">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="controls">
+                <button id="resetDay" class="btn">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <script src="Funciones.js"></script>
+
+</body>
+
+</html>

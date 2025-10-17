@@ -1,0 +1,196 @@
+:root {
+    --bg: #0b1020;
+    --card: #0f1724;
+    --muted: #9baec0
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
+}
+
+body {
+    background: linear-gradient(180deg, #041025 0%, var(--bg) 100%);
+    color: #e6eef6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px
+}
+
+button {
+    cursor: pointer;
+}
+
+.app {
+    width: 100%;
+    max-width: 520px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6)
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0
+}
+
+.sub {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center
+}
+
+.count {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 6px 0
+}
+
+.date-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: inherit;
+    font-weight: 600
+}
+
+.big {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 16px 0
+}
+
+.big .btn {
+    min-width: 72px;
+    padding: 16px 18px;
+    font-size: 18px;
+    border-width: 0
+}
+
+.add {
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.minus {
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 8px
+}
+
+input[type="date"] {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 10px;
+    border-radius: 10px;
+    color: inherit
+}
+
+small {
+    display: block;
+    color: var(--muted);
+    margin-top: 8px
+}
+
+footer {
+    margin-top: 12px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.progress-wrapper {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+  border-radius: 8px;
+}
+.progress-text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9baec0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #0f1724;
+  padding: 20px 24px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 80%;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+
+
+
+
+@media (max-width:420px) {
+    .count {
+        font-size: 56px
+    }
+
+    .big .btn {
+        min-width: 60px;
+        padding: 14px 16px
+    }
+}
