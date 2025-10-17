@@ -107,7 +107,7 @@ datePicker.addEventListener('change', render);
 
 resetDay.addEventListener('click', () => {
   const key = datePicker.value;
-  if (confirm('Resetear contador de ' + key + '?')) {
+  if (confirm('Resetear contador de hoy?')) {
     delete store[key];
     saveAll(store);
     render();
